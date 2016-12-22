@@ -1,0 +1,16 @@
+form:
+  tabs: 
+    - name: contentSelectionTab
+      label: Gallery items
+      fields:
+        - name: galleryelementsFolderRef
+          label: Select gallery folder
+          required: true
+          requiredErrorMessage: You must select a gallery folder which contains a list of galery elements!
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: galleryelements
+          appName: galleryelements
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+
+actions: !include /one-pager-module/dialogs/common/default-dialog-actions.yaml

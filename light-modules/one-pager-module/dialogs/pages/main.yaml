@@ -1,0 +1,10 @@
+form:
+  tabs:
+    - name: tabText
+      label: Title texts
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Title                
+    
+actions: !include /one-pager-module/dialogs/common/default-dialog-actions.yaml
